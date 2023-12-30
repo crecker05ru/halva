@@ -1,0 +1,40 @@
+.footer {
+  &__inner {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.socials {
+  &__list {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+  }
+  &__number {
+    color: #fff;
+
+  }
+  &__item-icon {
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+    fill: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 1px 3px 3px;
+    }
+  }
+}
+.icon {
+  &-instagram {
+    background-image: url('../../../../assets/svg/icon-instagram-white.svg')
+  }
+  &-whatsapp {
+    background-image: url('../../../../assets/svg/icon-whatsapp-white.svg')
+  }
+  &-geolocation {
+    background-image: url('../../../../assets/svg/icon-geolocation.svg')
+  }
+} 

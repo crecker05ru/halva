@@ -2,12 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Here</title>
+  <title>Halva</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=bf184f9a-71f3-4da7-8c2a-1a18cd007409&lang=ru_RU" type="text/javascript"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
-<body>
+<body data-theme="light">
   <app-root></app-root>
+  <!-- <div id="map"></div> -->
+  <script type="text/javascript">
+
+    ymaps.ready(function () {
+    
+      let map = new ymaps.Map("map", {
+          center: [42.974644, 47.508895],
+          controls: [],
+          options: {
+            float: "bottom"
+          },
+          zoom: 15
+        });
+        map.controls.add("geolocationControl", {
+          // float: "none",
+          // position: {
+          //   bottom: "0px",
+          //   right: "4px"
+          // }
+        });
+        map.controls.add("zoomControl", {
+          size: "small",
+          // float: "none",
+          // position: {
+          //   bottom: "0px",
+          //   right: "16px"
+          // }
+        });
+
+        let point = new ymaps.Placemark(
+            [42.974644, 47.508895],
+            { hintContent: `Кофейня Halva` },
+            // {
+            //   iconLayout: "default#image",
+            //   // iconImageHref: icon,
+            //   iconImageSize: [48, 58],
+            //   iconImageOffset: [-40, -40],
+            //   iconRotate: 10
+            // }
+          );
+
+          map.geoObjects.add(point);
+      }
+    )
+    
+    </script>
 </body>
 </html>

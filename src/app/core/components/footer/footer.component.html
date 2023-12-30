@@ -1,0 +1,19 @@
+<div class="footer">
+  <my-modal id="mapModal">
+    <div id="map" style="min-width: 600px; min-height: 400px"></div>
+    <button  class="button__modal" (click)="modalService.close();">X</button>
+
+
+  </my-modal>
+  <div class="footer__inner">
+    
+    <div class="footer__socials socials">
+      <ul class="socials__list">
+        <li class="socials__item"><a class="socials__item-link" href="http://instagram.com/_u/halawiyat_halva/"><div class="socials__item-icon icon-instagram"></div></a></li>
+        <li class="socials__item"><a class="socials__item-link" aria-label="Chat on WhatsApp" href="https://wa.me/79886310400"><div class="socials__item-icon icon-whatsapp"></div></a></li>
+        <li class="socials__item"><a class="socials__item-link" (click)="openMapModal('mapModal')"><div class="socials__item-icon icon-geolocation"></div></a></li>
+        <li class="socials__item"><a class="socials__item-link"  href="tel:919506"><div class="socials__number">919506</div></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

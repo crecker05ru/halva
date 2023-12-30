@@ -1,11 +1,12 @@
 {
-  "name": "here",
+  "name": "halva",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-path dist --base-href /halva/",
     "watch": "ng build --watch --configuration development",
+    "based":"ng build --output-path dist --base-href /halva/",
     "test": "ng test"
   },
   "private": true,

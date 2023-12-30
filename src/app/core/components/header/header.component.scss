@@ -1,0 +1,22 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &__logo-text {
+    font-size: 4rem;
+    background: -webkit-linear-gradient(top left, var(--gradient-from-color2),var(--gradient-to-color2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Overlock SC", sans-serif;
+  }
+  &__logo-subtitle {
+    font-size: 2rem;
+    color: var(--main-text-color);
+    // font-family: "Itim",sans-serif;
+  }
+}
