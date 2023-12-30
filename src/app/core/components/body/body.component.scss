@@ -8,8 +8,13 @@
     object-position: 0 38%;
     // background-position: 200px 200px;
   }
-  &__products-list {
+  &__products {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  &__products-list {
+    display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
   }
 }
