@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-critters-container>
+<head>
+  <meta charset="utf-8">
+  <title>Halva</title>
+  <base href="/halva/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=bf184f9a-71f3-4da7-8c2a-1a18cd007409&lang=ru_RU" type="text/javascript"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<style>html{scroll-behavior:smooth;padding:0}*,*:before,*:after{box-sizing:border-box}body{margin:0}[data-theme=light]{--main-background-color: #ffffff;--main-border-color: #e5e8ea;--main-text-color: #a5671c;--gradient-from-color: #f3c88e;--gradient-to-color: #b86e0a;--gradient-from-color2: #e1ca96;--gradient-to-color2: #a5671c;--header-background-color: #fff;--footer-background-color: #fff;--link-color: rgb(0, 150, 150);--link-hover-color:#7100b8;--secondary-background-color: rgb(255, 169, 57);--alt-background-color: rgb(96, 255, 202);--svg-background-color: #0069ec;--scrollbar-track-color: #c4c4c4;--scrollbar-thumb-color: #dddddd;--scrollbar-thumb-hover-color: #d6d6d6}html,body{height:100%}body{margin:0;font-family:Roboto,Helvetica Neue,sans-serif;color:var(--main-text-color);background-color:var(--main-background-color)}
+</style><link rel="stylesheet" href="styles-EGAMW4RZ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-EGAMW4RZ.css"></noscript></head>
+<body data-theme="light">
+  <app-root></app-root>
+  <!-- <div id="map"></div> -->
+  <script type="text/javascript">
+
+    ymaps.ready(function () {
+    
+      let map = new ymaps.Map("map", {
+          center: [42.974644, 47.508895],
+          controls: [],
+          options: {
+            float: "bottom"
+          },
+          zoom: 15
+        });
+        map.controls.add("geolocationControl", {
+          // float: "none",
+          // position: {
+          //   bottom: "0px",
+          //   right: "4px"
+          // }
+        });
+        map.controls.add("zoomControl", {
+          size: "small",
+          // float: "none",
+          // position: {
+          //   bottom: "0px",
+          //   right: "16px"
+          // }
+        });
+
+        let point = new ymaps.Placemark(
+            [42.974644, 47.508895],
+            { hintContent: `Кофейня Halva` },
+            // {
+            //   iconLayout: "default#image",
+            //   // iconImageHref: icon,
+            //   iconImageSize: [48, 58],
+            //   iconImageOffset: [-40, -40],
+            //   iconRotate: 10
+            // }
+          );
+
+          map.geoObjects.add(point);
+      }
+    )
+    
+    </script>
+<script src="polyfills-LZBJRJJE.js" type="module"></script><script src="main-7G3DG2CU.js" type="module"></script></body>
+</html>
