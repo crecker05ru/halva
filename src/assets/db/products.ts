@@ -11,7 +11,7 @@ nutritions:
     fats: 26,
     carbs: 80
   },
-img: '/assets/images/mereng.jpg'
+img: './assets/images/mereng.jpg'
 
 },
 {
@@ -27,7 +27,7 @@ img: '/assets/images/mereng.jpg'
       fats: 68,
       carbs: 79
     },
-  img: '/assets/images/tri-shokolada.jpg'
+  img: 'assets/images/tri-shokolada.jpg'
   
   }
 ]
