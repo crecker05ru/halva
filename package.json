@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-path dist --base-href /halva/",
+    "build": "ng build --output-path halva --base-href /halva/",
     "watch": "ng build --watch --configuration development",
     "based":"ng build --output-path dist --base-href /halva/",
     "test": "ng test"
