@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './carousel.component.scss'
 })
 export class CarouselComponent {
+@Input() images = []
+currentImageIndex = 0
 
+nextSlide() {
+  if(this.currentImageIndex < this.images.length)
+  this.currentImageIndex++
+}
+prevSlide() {
+  if(this.currentImageIndex > 0)
+  this.currentImageIndex--
+}
 }
