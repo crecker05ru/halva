@@ -2,10 +2,10 @@
   @if(productData){
   <div class="product__inner">
     <img class="product__img" [alt]="productData.title" [src]="productData.img"/>
+    <!-- <img class="product__img" [alt]="productData.title" src="../../../../assets/images"/> -->
     <h2 class="product__title">{{productData.title}}</h2>
     <p class="product__description">{{productData.description}}</p>
     <p class="product__price">Цена: {{productData.price}}</p>
-    <p class="product__weight">Вес: {{productData.weight}}</p>
   </div>
 
   }

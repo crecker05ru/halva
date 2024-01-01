@@ -14,12 +14,25 @@
   }
   &__products-list {
     display: flex;
-    column-gap: 1rem;
+    gap: 1rem;
     flex-wrap: wrap;
     @media screen and (max-width: 980px) {
       justify-content: center;
       row-gap: 1rem;
       // flex-direction: column;
+    }
+  }
+  &__products-item {
+    // flex: 1 1 32%;
+    width: calc((100% / 3) - 1rem);
+    flex-grow: 0;
+    flex-shrink: 0;
+    @media screen and (max-width: 980px) {
+      width: calc((100% / 2) - 1rem);
+    }
+
+    @media screen and (max-width: 540px) {
+     width: 90%;
     }
   }
 }

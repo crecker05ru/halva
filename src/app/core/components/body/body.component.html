@@ -3,7 +3,7 @@
     <div class="main__carousel"><img class="main__image" alt="Halva" src="./assets/images/main-banner.jpg"/></div>
     <div class="main__products">
       <ul class="main__products-list">      @for(product of data; track product){
-        <li><app-product [productData]="product"></app-product></li>
+        <li class="main__products-item"><app-product [productData]="product"></app-product></li>
       }
     </ul>
 
