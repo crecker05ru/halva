@@ -2,10 +2,10 @@
 <div class="carousel__wrapper">
   @for(image of images; track image){
     <div class="carousel__image-wrapper">
-      <img src="" alt="" class="carousel__image">
+      <img [src]="image" alt="Image" class="carousel__image">
     </div>
   }
-  <button class="carousel__button button_next">></button>
-  <button class="carousel__button button_prev"><</button>
+  <button class="carousel__button button_next" (click)="nextSlide()">&#8250;</button>
+  <button class="carousel__button button_prev" (click)="prevSlide()">&#8249;</button>
 </div>
 </div>
